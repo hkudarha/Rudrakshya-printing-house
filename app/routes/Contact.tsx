@@ -1,15 +1,10 @@
 import { Link } from "react-router";
 import { useForm } from "react-hook-form";
+import SubscribeUs from "~/components/SubscribeUs";
+import ShopOurInsta from "~/components/ShopOurInsta";
 
 
 export default function Contact() {
-  // const { register, handleSubmit, reset } = useForm();
-
-  // const onSubmit = (data) => {
-  //   console.log("Form Data:", data);
-  //   reset();
-  // };
-
   return (
       <div className=" overflow-hidden">
           {/* banner image  */}
@@ -62,13 +57,13 @@ export default function Contact() {
                       <input
                           type="text"
                           placeholder="Your full name*"
-                          // {...register("name", { required: true })}
+                         
                           className="w-1/2 p-2 border rounded-md focus:outline-black"
                       />
                       <input
                           type="email"
                           placeholder="Write your email here*"
-                          // {...register("email", { required: true })}
+                          
                           className="w-1/2 p-2 border rounded-md focus:outline-black"
                       />
                   </div>
@@ -76,18 +71,18 @@ export default function Contact() {
                   <input
                       type="tel"
                       placeholder="Phone number"
-                      // {...register("phone")}
+                      
                       className="w-full p-2 border rounded-md focus:outline-black"
                   />
                   <input
                       type="text"
                       placeholder="Write your subject here"
-                      // {...register("subject", { required: true })}
+                      
                       className="w-full p-2 border rounded-md focus:outline-black"
                   />
                   <textarea
                       placeholder="Write your message here*"
-                      // {...register("message", { required: true })}
+                      
                       className="w-full p-2 border rounded-md h-10 focus:outline-black"
                   ></textarea>
 
@@ -147,6 +142,8 @@ export default function Contact() {
            </div>
 
           {/* Subscribe us Now */}
+          <SubscribeUs/>
+          <ShopOurInsta/>
           
 
           {/* map  */}
@@ -155,6 +152,9 @@ export default function Contact() {
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7221852.767402766!2d72.49649714241713!3d27.892910074239207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39037aaf0bd7c733%3A0x540b12c1cbabba63!2sPost%20Office%2C%20Keylong!5e0!3m2!1sen!2sin!4v1714805665113!5m2!1sen!2sin" width="800" height="600"  
              className="w-[85vw] h-full items-center"  loading="lazy"></iframe>
           </div>
+
+
+          
 
 
       </div>

@@ -1,11 +1,41 @@
 // import type { Route } from "./+types/home";
 import SubscribeUs from "~/components/SubscribeUs";
 import ShopOurInsta from "~/components/ShopOurInsta";
+import CustomerReview from "~/components/CustomerReview";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
+
+
+const slides = [
+  {
+    id: 1,
+    title: "iPhone 15 Series",
+    description: "Limited Stocks Available. Grab It Now!",
+    image: "https://i.pinimg.com/736x/5d/c0/d2/5dc0d2dec85b7369fde3c510901ed603.jpg",
+  },
+  {
+    id: 2,
+    title: "Samsung Galaxy S23",
+    description: "Experience the Next-Gen Performance!",
+    image: "https://i.pinimg.com/736x/a3/ea/a5/a3eaa5f5e2650b687551e1c60065f9f9.jpg",
+  },
+  {
+    id: 3,
+    title: "Google Pixel 7",
+    description: "The Best Camera Smartphone Yet!",
+    image: "https://i.pinimg.com/736x/47/40/6d/47406ddf252dd1a83df1f32775642d36.jpg",
+  },
+];
+
+
 
 export default function Home() {
   return (
     <>
-      <div
+      {/* <div
             className="relative bg-cover bg-center h-[90vh] flex items-center rounded-xl"
             style={{ backgroundImage: "url('https://i.pinimg.com/736x/5d/c0/d2/5dc0d2dec85b7369fde3c510901ed603.jpg')" }}
             >
@@ -18,6 +48,48 @@ export default function Home() {
                     Shop Collection
                     </button>
                 </div>
+      </div> */}
+
+
+
+      <div>
+         <Swiper
+      pagination={{
+        clickable: true,
+        dynamicBullets: true,
+        renderBullet: (index, className) => {
+          return `<span class="${className}" style="background-color: #dddce3;"></span>`;
+        }
+      }}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      effect="fade"
+      speed={1000}
+      modules={[Pagination, Autoplay, EffectFade]}
+      className="mySwiper"
+    >
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.id}>
+          <div
+            className="relative bg-cover bg-center h-[90vh] flex items-center rounded-xl transition-all duration-1000 ease-in-out"
+            style={{ backgroundImage: `url(${slide.image})` }}
+          >
+            <div className="max-w-md ml-12 text-white text-start">
+              <h1 className="text-4xl font-bold mb-2">{slide.title}</h1>
+              <p className="text-lg mb-4">{slide.description}</p>
+              <button className="bg-white uppercase text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-300 transition-all duration-300">
+                Shop Collection
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+    <style>{`
+        .swiper-pagination-bullet-active {
+        background-color: white;
+        }
+      `}
+    </style>
       </div>
 
 
@@ -47,6 +119,7 @@ export default function Home() {
                 </div>
       </div>
 
+      <CustomerReview/>
       <SubscribeUs/>
       <ShopOurInsta/>
 

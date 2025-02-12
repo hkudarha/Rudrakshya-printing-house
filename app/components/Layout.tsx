@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function ProjectLayout() {
   return (
-    <div>
+    <div className="bg-white">
       <Header/>
       <main>
         <Outlet />
