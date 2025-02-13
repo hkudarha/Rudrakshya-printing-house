@@ -6,7 +6,7 @@ import { type RouteConfig,
 
 export default [
   layout( "./components/Layout.tsx",[
-     route("/","./routes/Home.tsx"),
+      route("/","./routes/Home.tsx"),
       route("/about","./routes/About.tsx"),
       route("/contact", "./routes/Contact.tsx"),
       route("/shop", "./routes/Shop.tsx"),
