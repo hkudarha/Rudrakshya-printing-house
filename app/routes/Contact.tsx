@@ -108,7 +108,7 @@ export default function Contact() {
                       {/* Product Image (Left Side) */}
                       <div className="md:w-1/2">
                           <img
-                          src="https://i.pinimg.com/736x/84/a1/55/84a155b0d056fc6c78fa71808c7f9ad9.jpg"
+                          src="https://ritwikas.com/cdn/shop/files/71ajk_1eSaL.jpg?v=1690270382"
                           alt="Product"
                           className="w-full h-[65vh] object-cover rounded-lg shadow-md"
                           />

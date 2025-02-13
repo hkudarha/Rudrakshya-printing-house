@@ -1,10 +1,10 @@
 const ShopOurInsta = () => {
     const images = [
-      "https://i.pinimg.com/736x/de/2d/2d/de2d2dcbbc8796d20a9b81b274b2fa3d.jpg",
-      "https://i.pinimg.com/736x/b4/1d/ad/b41dad2ef2a9bd5d164f9a0c3ad98ca9.jpg",
-      "https://i.pinimg.com/736x/70/8c/85/708c856af59f1e5960610334e5debbec.jpg",
-      "https://i.pinimg.com/736x/84/29/66/84296617b2f49ac27cb262fb0a833827.jpg",
-      "https://i.pinimg.com/736x/0c/82/0e/0c820e904689d18cedda91b20bd0b659.jpg"
+      "https://wehatke.com/public/uploads/all/myZsWcedqLrIVuR9W7edEvB1gA4cxoW2n1bQ3XEs.jpg",
+      "https://i.pinimg.com/736x/4e/fa/e9/4efae944bc4c50309aedff8afedfd21c.jpg",
+      "https://www.zestpics.com/cdn/shop/products/Hend_Magic_pillowe.jpg?v=1579134967&width=720",
+      "https://skprints.co.in/wp-content/uploads/2024/05/SGOf5H7i.jpeg",
+      "https://images.zoomin.com/framedprint_4_4/4.0.0/product_images/web/classic-frames-with-photo-1.jpg"
     ];
   
     return (
