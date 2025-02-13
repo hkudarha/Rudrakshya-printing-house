@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
+import FeatureCards from "~/components/FeatureCards";
 
 
 const slides = [
@@ -77,11 +78,11 @@ export default function Home() {
       </div>
 
 
-      <div className="mt-15 mb-1 flex flex-col md:flex-row gap-6 p-6 justify-center">
+      <div className="mt-15 mb-15 flex flex-col md:flex-row gap-6 px-15 justify-center">
       {/* Left Card */}
       <div
         className="relative w-full md:w-[45vw] lg:h-[60vh] md:h-[40vh] bg-cover bg-center rounded-2xl flex items-center justify-center p-6 text-white shadow-lg"
-        style={{ backgroundImage: "url('https://i.pinimg.com/736x/f8/29/47/f829470fab972a74d2d0cb6a18b2bb1a.jpg')" }}
+        style={{ backgroundImage: "url('https://th.bing.com/th/id/OIP.v6VtRumA6_3Bd0iKsutKWQHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain')" }}
       >
         <div className="p-4 rounded-lg text-start">
           <h2 className="text-[6vw] md:text-[2vw] font-bold">20% Off On Laptops</h2>
@@ -94,8 +95,8 @@ export default function Home() {
 
       {/* Right Card */}
       <div
-        className="relative w-full md:w-[45vw] lg:h-[60vh] md:h-[40vh] bg-cover bg-center rounded-2xl flex items-center justify-center p-6 text-white shadow-lg"
-        style={{ backgroundImage: "url('https://i.pinimg.com/736x/10/f2/59/10f259d86d58999d8dc2c0e19473d3e1.jpg')" }}
+        className="relative w-full md:w-[45vw] lg:h-[60vh] md:h-[40vh] bg-cover bg-left rounded-2xl flex items-center justify-center p-6 text-white shadow-lg"
+        style={{ backgroundImage: "url('https://i.etsystatic.com/23353655/r/il/420121/2840582135/il_1588xN.2840582135_22fj.jpg')" }}
       >
         <div className="p-4 rounded-lg text-start">
           <h2 className="text-[6vw] md:text-[2vw] font-bold">Apple Collection</h2>
@@ -108,6 +109,7 @@ export default function Home() {
     </div>
 
       <CustomerReview/>
+      <FeatureCards/>
       <SubscribeUs/>
       <ShopOurInsta/>
 

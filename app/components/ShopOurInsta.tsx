@@ -8,7 +8,7 @@ const ShopOurInsta = () => {
     ];
   
     return (
-      <div className="px-10 mb-10">
+      <div className="px-15 mb-15 mt-15">
         <h3 className="text-3xl font-bold mb-8 text-center">Shop Our Insta</h3>
         <div className="flex gap-4 justify-between">
           {images.map((src, index) => (

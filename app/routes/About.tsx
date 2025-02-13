@@ -1,6 +1,7 @@
 import React from "react"
 import SubscribeUs from "../components/SubscribeUs"
 import ShopOurInsta from "../components/ShopOurInsta"
+import FeatureCards from "~/components/FeatureCards"
 
 
  function About() {
@@ -8,8 +9,8 @@ import ShopOurInsta from "../components/ShopOurInsta"
         <div>
             {/* banner image  */}
             <div
-            className="relative bg-cover bg-center h-[40vh] flex items-center  justify-center rounded-xl "
-            style={{ backgroundImage: "url('https://i.pinimg.com/736x/72/65/0b/72650bd4c3bb1aaa061053d5a3684531.jpg')" }}
+            className="relative bg-cover bg-center h-[50vh] flex items-center  justify-center rounded-xl "
+            style={{ backgroundImage: "url('https://i.pinimg.com/originals/27/3a/7b/273a7b2bf723c9a8cb35b0d403fa8fc4.jpg')" }}
             >
                 <div>
                     <h1 className="text-4xl font-bold mb-2 text-white ">About Us</h1>  
@@ -17,9 +18,10 @@ import ShopOurInsta from "../components/ShopOurInsta"
                 </div>             
             </div>
 
+            <FeatureCards/>
              
              
-            <div className="flex flex-col md:flex-row items-center justify-center p-6 gap-6">
+            <div className="flex mt-15 mb-15 px-15 flex-col md:flex-row items-center justify-center  gap-10">
                 {/* Left Side - Video */}
                 <div className="w-full md:w-1/2">
                     <video className="w-full h-[80vh] rounded-lg shadow-lg " controls>
@@ -30,8 +32,8 @@ import ShopOurInsta from "../components/ShopOurInsta"
                 
                 {/* Right Side - Text Content */}
                 <div className="w-full md:w-1/2 text-center md:text-left">
-                    <h2 className="text-2xl font-bold">Best Digital Store BasicStore</h2>
-                    <p className="mt-2 text-gray-700">
+                    <h2 className="text-2xl mb-5 font-bold">Best Digital Store BasicStore</h2>
+                    <p className=" text-gray-700">
                         Risus augue curabitur diam senectus congue velit et. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Sed vitae metus nibh sit era. Nulla adipiscing pharetra eros at.
 
                         Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Quam libero etiam et in ac at quis. Risus augue curabitur diam senectus congue velit et.
