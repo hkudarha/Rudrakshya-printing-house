@@ -1,17 +1,17 @@
 // React Router generated types for route:
-// ./routes/CheckOut.tsx
+// ./routes/checkout.tsx
 
 import type * as T from "react-router/route-module"
 
 import type { Info as Parent0 } from "../../+types/root.js"
 import type { Info as Parent1 } from "../../components/+types/Layout.js"
 
-type Module = typeof import("../CheckOut.js")
+type Module = typeof import("../checkout.js")
 
 export type Info = {
   parents: [Parent0, Parent1],
-  id: "routes/CheckOut"
-  file: "./routes/CheckOut.tsx"
+  id: "routes/checkout"
+  file: "./routes/checkout.tsx"
   path: "/checkout"
   params: {} & { [key: string]: string | undefined }
   module: Module
