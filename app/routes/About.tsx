@@ -2,6 +2,7 @@ import React from "react"
 import SubscribeUs from "../components/SubscribeUs"
 import ShopOurInsta from "../components/ShopOurInsta"
 import FeatureCards from "~/components/FeatureCards"
+import CustomerReview from "~/components/CustomerReview"
 
 
  function About() {
@@ -42,7 +43,7 @@ import FeatureCards from "~/components/FeatureCards"
                 </div>
             </div>
 
-            
+            <CustomerReview/>
 
             <SubscribeUs/>
             <ShopOurInsta/>    

@@ -8,6 +8,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import FeatureCards from "~/components/FeatureCards";
+import CategoryCard from "~/components/CategoryCard";
+import BestSellingItems from "~/components/BestSellingItem";
 
 
 const slides = [
@@ -21,7 +23,7 @@ const slides = [
     id: 2,
     title: "Samsung Galaxy S23",
     description: "Experience the Next-Gen Performance!",
-    image: "https://i.pinimg.com/736x/4f/f4/23/4ff42326554d497b428c41beee5fe6e2.jpg",
+    image: "https://th.bing.com/th/id/OIP.e-VE144Sx1TlDtQKCOy4aAHaGa?rs=1&pid=ImgDetMain",
   },
   {
     id: 3,
@@ -77,8 +79,11 @@ export default function Home() {
     </style>
       </div>
 
+      <CategoryCard/>
 
-      <div className="mt-15 mb-15 flex flex-col md:flex-row gap-6 px-15 justify-center">
+      <BestSellingItems/>
+
+      <div className="mt-15 w-full mb-15 flex flex-col md:flex-row gap-6 px-15 justify-center">
       {/* Left Card */}
       <div
         className="relative w-full md:w-[45vw] lg:h-[60vh] md:h-[40vh] bg-cover bg-center rounded-2xl flex items-center justify-center p-6 text-white shadow-lg"
