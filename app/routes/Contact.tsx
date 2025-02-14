@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 import SubscribeUs from "~/components/SubscribeUs";
 import ShopOurInsta from "~/components/ShopOurInsta";
 
