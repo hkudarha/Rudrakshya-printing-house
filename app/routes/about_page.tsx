@@ -1,4 +1,3 @@
-import React from "react"
 import SubscribeUs from "../components/SubscribeUs"
 import ShopOurInsta from "../components/ShopOurInsta"
 import FeatureCards from "~/components/FeatureCards"
