@@ -21,7 +21,7 @@ import CustomerReview from "~/components/CustomerReview"
             <FeatureCards/>
              
              
-            <div className="flex mt-15 mb-15 px-15 flex-col md:flex-row items-center justify-center  gap-10">
+            <div className="flex mt-14 mb-14 px-14 flex-col md:flex-row items-center justify-center  gap-10">
                 {/* Left Side - Video */}
                 <div className="w-full md:w-1/2">
                     <video className="w-full h-[80vh] rounded-lg shadow-lg " controls>
