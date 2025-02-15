@@ -4,7 +4,7 @@ const SubscribeUs = () => {
      
 
         <div
-        className="rounded-xl mb-15 mt-15 relative w-full h-96 bg-cover bg-center flex flex-col items-center justify-center text-white "
+        className="rounded-xl mb-14 mt-14 relative w-full h-96 bg-cover bg-center flex flex-col items-center justify-center text-white "
         style={{ backgroundImage: "url('https://ik.imagekit.io/j83rchiauw/seo_popular_master/202309071648_wTB0jKoHdUKlaJ3Q.jpg')" }}
         >
         {/* Black Transparent Overlay */}
