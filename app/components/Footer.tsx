@@ -5,9 +5,9 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaWhatsapp } from "r
 
 export default function Footer() {
     return (
-        <footer className="bg-white border-y">
+        <footer className="bg-white text-black border-y">
             <div className="mx-auto w-full max-w-screen-xl py-5">
-                <div className="md:flex md:justify-between px-15">
+                <div className="md:flex md:justify-between px-14">
                     <div className="mb-6 md:mb-0 ">
                         <h2 className="text-[2vw] text-start mb-4 font-bold text-[#fd8500]">Basic<span className="text-black">Store</span><span className="text-[#fd8500]">.</span></h2>
                         <p className="lg:w-[25vw] sm:[100vw] text-start">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>

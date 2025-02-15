@@ -29,9 +29,9 @@ const categories = [
 
 const CategoryCard: React.FC = () => {
   return (
-    <div className="items-center mt-15 mb-15">
+    <div className="items-center mt-14 mb-14">
         <h2 className="text-2xl text-center font-bold">Our Categories</h2>
-        <div className="flex mx-15 py-15  justify-between">
+        <div className="flex mx-14 py-14  justify-between">
         {categories.map((category, index) => (
             <div key={index} className="bg-white rounded-lg text-center cursor-pointer w-60">
             <img

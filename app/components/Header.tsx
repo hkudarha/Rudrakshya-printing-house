@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <header className="shadow sticky z-50 top-0">
             <nav className="bg-white border-gray-200 ">
-                <div className="flex py-2 px-15 flex-wrap justify-between items-center  uppercase">
+                <div className="flex py-2 px-14 flex-wrap justify-between items-center  uppercase">
                     <Link to="/" className="flex items-center">
                         <h2 className="text-[2vw]  font-bold text-[#fd8500]">
                             Basic<span className="text-black">Store</span><span className="text-[#fd8500]">.</span>

@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
 
-      <div>
+      <div className="text-black">
          <Swiper
       pagination={{
         clickable: true,

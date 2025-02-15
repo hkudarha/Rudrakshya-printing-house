@@ -9,7 +9,7 @@ const features = [
 
 export default function FeatureCards() {
   return (
-    <div className="flex flex-wrap justify-between gap-6 mx-15 py-15">
+    <div className="flex flex-wrap justify-between gap-6 mx-14 py-14">
       {features.map((feature, index) => (
         <div key={index} className="flex flex-col items-center  p-6 bg-white shadow-2xl rounded-xl w-60 text-center">
           <p className="text-[#fd8500]">{feature.icon}</p>

@@ -61,14 +61,14 @@ const BestSellingItems: React.FC = () => {
   ];
 
   return (
-    <div className="container px-15 pb-15">
+    <div className="container px-14 pb-14 text-black">
       <h2 className="text-2xl font-bold mb-8 text-center">Best Selling Items</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((product, index) => (
           <BestSellingItem key={index} {...product} />
         ))}
       </div>
-      <div className="mt-8 text-center">
+      <div className="mt-6 text-center">
         <Link to='/shop'>
             <button className="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-3xl">
             GO TO SHOP
