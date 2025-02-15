@@ -61,7 +61,7 @@ const BestSellingItems: React.FC = () => {
   ];
 
   return (
-    <div className="container px-14 pb-14 text-black">
+    <div className="w-full px-14 pb-14 text-black">
       <h2 className="text-2xl font-bold mb-8 text-center">Best Selling Items</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((product, index) => (
