@@ -37,7 +37,7 @@ const CategoryCard: React.FC = () => {
             <img
                 src={category.image}
                 alt={category.name}
-                className="w-48 h-48 mx-auto rounded-xl object-cover"
+                className="w-64 h-64 mx-auto rounded-xl object-cover"
             />
             <h2 className="text-lg font-bold mt-2">{category.name}</h2>
             <p className="text-gray-600">Total Items: {category.products.length}</p>

@@ -72,7 +72,7 @@ const CustomerReview = () => {
   };
 
   return (
-    <div className="container mx-auto mt-14 mb-14 px-14">
+    <div className="container my-14 mx-14 text-black overflow-x-hidden">
       <h2 className="text-2xl font-bold mb-8 text-center">Our Customer's Review</h2>
       
       <Swiper
