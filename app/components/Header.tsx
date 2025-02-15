@@ -7,7 +7,7 @@ export default function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
-        <header className="shadow sticky z-50 top-0">
+        <header className="shadow fixed w-full z-50 top-0">
             <nav className="bg-white border-gray-200 ">
                 <div className="flex py-2 px-14 flex-wrap justify-between items-center  uppercase">
                     <Link to="/" className="flex items-center">
