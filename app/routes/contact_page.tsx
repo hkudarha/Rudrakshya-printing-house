@@ -19,8 +19,8 @@ export default function Contact() {
           </div>
 
           {/* form  */}
-          <div className="container mx-auto px-14 py-14  text-black">
-              <div className="flex flex-col md:flex-row gap-10">
+          <div className="container    text-black">
+              <div className="flex flex-col md:flex-row gap-10 mx-14 my-14">
                   {/* Left Side - Store Locations */}
                   <div className="md:w-1/2 text-start flex flex-col justify-center">
                   <h2 className="text-2xl font-bold mb-4">Contact Info</h2>
@@ -101,7 +101,7 @@ export default function Contact() {
 
           {/* Our Stores  section */}
 
-          <div className="py-14 px-14 text-black"> 
+          <div className="my-14 mx-14 text-black"> 
               <div className="container  "> {/* Centered container with padding */}
                   <div className="flex flex-col md:flex-row items-start md:items-center gap-10"> {/* Responsive flexbox layout */}
 
