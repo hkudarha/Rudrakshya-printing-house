@@ -19,7 +19,7 @@ export default function Contact() {
           </div>
 
           {/* form  */}
-          <div className="container mx-auto px-14 py-14 ">
+          <div className="container mx-auto px-14 py-14  text-black">
               <div className="flex flex-col md:flex-row gap-10">
                   {/* Left Side - Store Locations */}
                   <div className="md:w-1/2 text-start flex flex-col justify-center">
@@ -101,7 +101,7 @@ export default function Contact() {
 
           {/* Our Stores  section */}
 
-          <div className="py-14 px-14"> 
+          <div className="py-14 px-14 text-black"> 
               <div className="container  "> {/* Centered container with padding */}
                   <div className="flex flex-col md:flex-row items-start md:items-center gap-10"> {/* Responsive flexbox layout */}
 
