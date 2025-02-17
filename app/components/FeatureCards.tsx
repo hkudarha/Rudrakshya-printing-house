@@ -25,11 +25,11 @@ const features = [
 
 export default function FeatureCards() {
   return (
-    <div className="flex flex-wrap text-black justify-between gap-6 mx-14 py-14">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-6 md:mx-14 py-14 text-black">
       {features.map((feature, index) => (
         <div
           key={index}
-          className="flex flex-col items-center  p-6 bg-white shadow-2xl rounded-xl w-64 text-center"
+          className="flex flex-col items-center p-6 bg-white shadow-2xl rounded-xl text-center w-full sm:w-[200px] md:w-[300px] lg:w-[270px] mx-auto"
         >
           <p className="text-[#fd8500]">{feature.icon}</p>
           <h2 className="text-xl font-semibold mt-4">{feature.title}</h2>

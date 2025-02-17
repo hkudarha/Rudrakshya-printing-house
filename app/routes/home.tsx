@@ -83,6 +83,8 @@ export default function Home() {
       <CategoryCard />
 
       <BestSellingItems />
+      <CustomerReview />
+
 
       <div className="mt-14 w-full mb-14 flex flex-col md:flex-row gap-6 px-4 md:px-14 justify-center">
         {/* Left Card */}
@@ -128,7 +130,6 @@ export default function Home() {
         </div>
       </div>
 
-      <CustomerReview />
       <FeatureCards />
       <SubscribeUs />
       <ShopOurInsta />
