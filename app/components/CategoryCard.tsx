@@ -30,26 +30,26 @@ const categories = [
 const CategoryCard: React.FC = () => {
   return (
     <div className="items-center mt-14 mb-14 text-black">
-      <h2 className="text-2xl text-center font-bold">Our Categories</h2>
-      <div className="flex mx-14 py-14  justify-between">
-        {categories.map((category, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-lg text-center cursor-pointer w-60"
-          >
-            <img
-              src={category.image}
-              alt={category.name}
-              className="w-64 h-64 mx-auto rounded-xl object-cover"
-            />
-            <h2 className="text-lg font-bold mt-2">{category.name}</h2>
-            <p className="text-gray-600">
-              Total Items: {category.products.length}
-            </p>
-          </div>
-        ))}
+  <h2 className="text-2xl text-center font-bold">Our Categories</h2>
+  <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-4 justify-center sm:justify-between mx-4 sm:mx-14 py-14">
+    {categories.map((category, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-lg text-center cursor-pointer w-full sm:w-60"
+      >
+        <img
+          src={category.image}
+          alt={category.name}
+          className="w-full sm:w-64 h-64 mx-auto rounded-xl object-cover"
+        />
+        <h2 className="text-lg font-bold mt-2">{category.name}</h2>
+        <p className="text-gray-600">
+          Total Items: {category.products.length}
+        </p>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
   );
 };
 

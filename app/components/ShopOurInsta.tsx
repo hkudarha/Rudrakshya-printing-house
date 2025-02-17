@@ -8,19 +8,27 @@ const ShopOurInsta = () => {
   ];
 
   return (
-    <div className="px-14 mb-14 mt-14 text-black overflow-hidden w-full">
-      <h3 className="text-3xl font-bold mb-8 text-center">Shop Our Insta</h3>
-      <div className="flex gap-4 justify-between">
-        {images.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Image ${index + 1}`}
-            className="w-48 h-48 object-cover rounded-lg"
-          />
-        ))}
-      </div>
+    <div className="px-4 sm:px-14 mb-14 mt-14 text-black overflow-hidden w-full">
+    <h3 className="text-3xl font-bold mb-8 text-center">Shop Our Insta</h3>
+    <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-4 justify-center sm:justify-between">
+      {images.slice(0, 4).map((src, index) => (
+        <img
+          key={index}
+          src={src}
+          alt={`Image ${index + 1}`}
+          className="w-full sm:w-48 h-48 object-cover rounded-lg"
+        />
+      ))}
+      {images.length > 4 && (
+        <img
+          key={4}
+          src={images[4]}
+          alt="Image 5"
+          className="w-full sm:w-48 h-48 object-cover rounded-lg hidden sm:block"
+        />
+      )}
     </div>
+  </div>
   );
 };
 
