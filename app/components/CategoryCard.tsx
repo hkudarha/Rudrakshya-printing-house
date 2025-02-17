@@ -11,7 +11,7 @@ const categories = [
     name: "Customised Product",
     image:
       "https://5.imimg.com/data5/SELLER/Default/2022/5/BO/ID/DF/71587631/customised-photo-printed-led-lamp-1000x1000.jpg",
-    products: [1, 2],
+    products: [1,2],
   },
   {
     name: "Wooden Art",
@@ -30,20 +30,25 @@ const categories = [
 const CategoryCard: React.FC = () => {
   return (
     <div className="items-center mt-14 mb-14 text-black">
-        <h2 className="text-2xl text-center font-bold">Our Categories</h2>
-        <div className="flex mx-14 py-14  justify-between">
+      <h2 className="text-2xl text-center font-bold">Our Categories</h2>
+      <div className="flex mx-14 py-14  justify-between">
         {categories.map((category, index) => (
-            <div key={index} className="bg-white rounded-lg text-center cursor-pointer w-60">
+          <div
+            key={index}
+            className="bg-white rounded-lg text-center cursor-pointer w-60"
+          >
             <img
-                src={category.image}
-                alt={category.name}
-                className="w-64 h-64 mx-auto rounded-xl object-cover"
+              src={category.image}
+              alt={category.name}
+              className="w-64 h-64 mx-auto rounded-xl object-cover"
             />
             <h2 className="text-lg font-bold mt-2">{category.name}</h2>
-            <p className="text-gray-600">Total Items: {category.products.length}</p>
-            </div>
+            <p className="text-gray-600">
+              Total Items: {category.products.length}
+            </p>
+          </div>
         ))}
-        </div>
+      </div>
     </div>
   );
 };

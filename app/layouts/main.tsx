@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 export default function ProjectLayout() {
   return (
     <div className="bg-white">
-      <Header/>
+      <Header />
       <main>
         <Outlet />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

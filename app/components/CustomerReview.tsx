@@ -58,10 +58,10 @@ const CustomerReview = () => {
       text: "Tempus oncu enim pellentesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellentesque pretium feugiat vel morbi suspen dise sagittis lorem habi!",
       author: "Linda Johnson",
       rating: 5,
-    }
+    },
   ];
 
-  const renderStars = (rating:number) => {
+  const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) =>
       i < rating ? (
         <FaStar key={i} className="text-[#fd8500] text-lg" />
@@ -73,8 +73,10 @@ const CustomerReview = () => {
 
   return (
     <div className="container my-14 mx-14 text-black overflow-x-hidden">
-      <h2 className="text-2xl font-bold mb-8 text-center">Our Customer's Review</h2>
-      
+      <h2 className="text-2xl font-bold mb-8 text-center">
+        Our Customer's Review
+      </h2>
+
       <Swiper
         slidesPerView={3}
         spaceBetween={20}
@@ -90,9 +92,16 @@ const CustomerReview = () => {
         className="mySwiper"
       >
         {reviews.map((review, index) => (
-          <SwiperSlide key={index} className="border rounded-lg p-5 shadow transition-all duration-300 flex flex-col items-center w-64 h-64">
-            <p className="mb-2 text-center text-sm overflow-hidden overflow-ellipsis">{review.text}</p>
-            <div className="flex items-center mt-3">{renderStars(review.rating)}</div>
+          <SwiperSlide
+            key={index}
+            className="border rounded-lg p-5 shadow transition-all duration-300 flex flex-col items-center w-64 h-64"
+          >
+            <p className="mb-2 text-center text-sm overflow-hidden overflow-ellipsis">
+              {review.text}
+            </p>
+            <div className="flex items-center mt-3">
+              {renderStars(review.rating)}
+            </div>
             <p className="mt-2 font-medium text-center">{review.author}</p>
           </SwiperSlide>
         ))}
@@ -102,3 +111,6 @@ const CustomerReview = () => {
 };
 
 export default CustomerReview;
+
+
+
