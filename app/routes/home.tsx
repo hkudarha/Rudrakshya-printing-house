@@ -24,15 +24,14 @@ const slides = [
     id: 2,
     title: "Samsung Galaxy S23",
     description: "Experience the Next-Gen Performance!",
-    image:
-      "https://th.bing.com/th/id/OIP.e-VE144Sx1TlDtQKCOy4aAHaGa?rs=1&pid=ImgDetMain",
+    image: "https://cdn.wallpapersafari.com/36/49/nfjN4l.jpg",
   },
   {
     id: 3,
     title: "Google Pixel 7",
     description: "The Best Camera Smartphone Yet!",
     image:
-      "https://images.pexels.com/photos/7801140/pexels-photo-7801140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://b2c-contenthub.com/wp-content/uploads/2023/03/Instax-Mini-12-review-2.jpg?quality=50&strip=all&w=1200",
   },
 ];
 
@@ -84,7 +83,6 @@ export default function Home() {
 
       <BestSellingItems />
       <CustomerReview />
-
 
       <div className="mt-14 w-full mb-14 flex flex-col md:flex-row gap-6 px-4 md:px-14 justify-center">
         {/* Left Card */}
