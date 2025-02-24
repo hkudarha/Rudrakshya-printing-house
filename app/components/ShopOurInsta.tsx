@@ -5,11 +5,11 @@ const ShopOurInsta = () => {
     "https://www.zestpics.com/cdn/shop/products/Hend_Magic_pillowe.jpg?v=1579134967&width=720",
     "https://skprints.co.in/wp-content/uploads/2024/05/SGOf5H7i.jpeg",
     "https://images.zoomin.com/framedprint_4_4/4.0.0/product_images/web/classic-frames-with-photo-1.jpg",
-  ];
+  ]; 
 
   return (
     <div className="px-4 sm:px-14 mb-14 mt-14 text-black overflow-hidden w-full">
-      <h3 className="text-3xl font-bold mb-8 text-center">Shop Our Insta</h3>
+      <h3 className="te xt-3xl font-bold mb-8 text-center">Shop Our Insta</h3>
       <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-4 justify-center sm:justify-between">
         {images.slice(0, 4).map((src, index) => (
           <img

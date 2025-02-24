@@ -23,8 +23,8 @@ export default function Contact() {
       </div>
 
       {/* form  */}
-      <div className="container    text-black">
-        <div className="flex flex-col md:flex-row gap-10 mx-14 my-14">
+      <div className="container text-black">
+        <div className="flex flex-col md:flex-row gap-10 mx-4 my-4 md:mx-14 md:my-14">
           {/* Left Side - Store Locations */}
           <div className="md:w-1/2 text-start flex flex-col justify-center">
             <h2 className="text-2xl font-bold mb-4">Contact Info</h2>
@@ -77,20 +77,20 @@ export default function Contact() {
             </p>
 
             <form
-              //  onSubmit={handleSubmit(onSubmit)}
+              // onSubmit={handleSubmit(onSubmit)}
               className="space-y-4"
             >
               {/* Name and Email in One Line */}
-              <div className="flex space-x-4">
+              <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
                 <input
                   type="text"
                   placeholder="Your full name*"
-                  className="w-1/2 p-2 border rounded-md focus:outline-black"
+                  className="w-full md:w-1/2 p-2 border rounded-md focus:outline-black"
                 />
                 <input
                   type="email"
                   placeholder="Write your email here*"
-                  className="w-1/2 p-2 border rounded-md focus:outline-black"
+                  className="w-full md:w-1/2 p-2 border rounded-md focus:outline-black"
                 />
               </div>
 
@@ -106,7 +106,7 @@ export default function Contact() {
               />
               <textarea
                 placeholder="Write your message here*"
-                className="w-full p-2 border rounded-md h-10 focus:outline-black"
+                className="w-full p-2 border rounded-md  focus:outline-black"
               ></textarea>
 
               <button
@@ -122,43 +122,42 @@ export default function Contact() {
 
       {/* Our Stores  section */}
 
-      <div className="my-14 mx-14 text-black">
-        <div className="container  ">
-          {" "}
+      <div className="my-8 mx-4 md:my-14 md:mx-14 text-black">
+        <div className="container px-4 md:px-0">
           {/* Centered container with padding */}
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-10">
-            {" "}
-            {/* Responsive flexbox layout */}
+          <div className="flex flex-col md:flex-row items-start gap-8 md:gap-10">
             {/* Product Image (Left Side) */}
             <div className="md:w-1/2">
               <img
                 src="https://ritwikas.com/cdn/shop/files/71ajk_1eSaL.jpg?v=1690270382"
                 alt="Product"
-                className="w-full h-[65vh] object-cover rounded-lg shadow-md"
+                className="w-full h-auto md:h-[65vh] object-cover rounded-lg shadow-md"
               />
             </div>
+
             {/* Store Information (Right Side) */}
-            <div className="md:w-1/2 text-start">
+            <div className="md:w-1/2 text-start flex flex-col justify-center mx-auto md:mt-[10vh]">
               <h2 className="text-2xl font-bold mb-4">Our Stores</h2>
               <p className="text-gray-700 mb-6">
                 You can also directly buy products from our stores.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                {" "}
                 {/* Grid for store locations */}
                 <div>
                   <h3 className="text-xl font-bold mb-2 underline decoration-1">
                     USA
                   </h3>
-                  <p className="text-gray-700">730 Gienstone Ave 65802, US</p>
-                  <Link to="tel:+123 666 777 88" className="text-gray-700">
+                  <p className="text-gray-700">730 Glenstone Ave 65802, US</p>
+                  <Link
+                    to="tel:+123 666 777 88"
+                    className="text-gray-700 block"
+                  >
                     +123 666 777 88
-                  </Link>{" "}
-                  <br />
+                  </Link>
                   <Link
                     to="mailto:yourinfo@gmail.com"
-                    className="text-gray-700"
+                    className="text-gray-700 block"
                   >
                     yourinfo@gmail.com
                   </Link>
@@ -170,14 +169,16 @@ export default function Contact() {
                   <p className="text-gray-700">
                     13 Rue Montmartre 75001,
                     <br /> Paris, France
-                  </p>{" "}
-                  <Link to="tel:+123 222 333 44" className="text-gray-700">
+                  </p>
+                  <Link
+                    to="tel:+123 222 333 44"
+                    className="text-gray-700 block"
+                  >
                     +123 222 333 44
-                  </Link>{" "}
-                  <br />
+                  </Link>
                   <Link
                     to="mailto:yourinfo@gmail.com"
-                    className="text-gray-700"
+                    className="text-gray-700 block"
                   >
                     yourinfo@gmail.com
                   </Link>

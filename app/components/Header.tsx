@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router";
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 
-
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -17,7 +16,7 @@ export default function Header() {
               <span className="text-[#fd8500]">.</span>
             </h2>
           </Link>
-          
+
           <div
             className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
@@ -77,15 +76,12 @@ export default function Header() {
             </ul>
           </div>
 
-         
-
           <div className="flex items-center lg:order-2 gap-[5vw]">
-          <FaSearch className="text-[#fd8500] text-lg cursor-pointer hover:text-black" />
-          <Link to="/cart" className="flex items-center lg:order-3">
-            <FaShoppingCart className="text-[#fd8500] text-lg cursor-pointer hover:text-black"/>
-          </Link>
+            <FaSearch className="text-[#fd8500] text-lg cursor-pointer hover:text-black" />
+            <Link to="/cart" className="flex items-center lg:order-3">
+              <FaShoppingCart className="text-[#fd8500] text-lg cursor-pointer hover:text-black" />
+            </Link>
           </div>
-          
         </div>
       </nav>
     </header>
