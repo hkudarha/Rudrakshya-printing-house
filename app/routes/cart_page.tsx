@@ -5,7 +5,7 @@ function Cart() {
   return (
     <div>
       <div
-        className="relative bg-cover bg-center h-[40vh] flex items-center  justify-center rounded-xl "
+        className="relative bg-cover bg-center h-[50vh] flex items-center  justify-center rounded-xl "
         style={{
           backgroundImage:
             "url('https://i.pinimg.com/736x/05/f4/4e/05f44e44d32d7f24f11ef93fecbc113c.jpg')",
