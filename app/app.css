@@ -10,6 +10,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   @apply bg-white dark:bg-gray-950;
 
