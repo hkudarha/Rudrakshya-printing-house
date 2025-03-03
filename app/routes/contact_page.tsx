@@ -23,7 +23,7 @@ export default function Contact() {
       </div>
 
       {/* form  */}
-      <div className="container text-black">
+      <div className="text-black w-full">
         <div className="flex flex-col md:flex-row gap-10 mx-4 my-4 md:mx-14 md:my-14">
           {/* Left Side - Store Locations */}
           <div className="md:w-1/2 text-start flex flex-col justify-center">
@@ -123,7 +123,7 @@ export default function Contact() {
       {/* Our Stores  section */}
 
       <div className="my-8 mx-4 md:my-14 md:mx-14 text-black">
-        <div className="container px-4 md:px-0">
+        <div className="px-4 md:px-0">
           {/* Centered container with padding */}
           <div className="flex flex-col md:flex-row items-start gap-8 md:gap-10">
             {/* Product Image (Left Side) */}
